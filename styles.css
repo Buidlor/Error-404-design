@@ -13,15 +13,24 @@ body{
     background: url(snowyBG.jpg);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-   
     animation: scale 3s infinite;
+}
+
+@media only screen and (max-width: 900px){ 
+    .block h1{
+        font-size: 75px;
+    }
+    .block p {
+        font-size: 20px;
+        font-weight: 400;
+    }
 }
 .block{
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   width: 2000px;
+   width: max-content;
  }
 
 .block a {
