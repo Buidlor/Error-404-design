@@ -13,7 +13,8 @@ body{
     background: url(snowyBG.jpg);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-  
+   
+    animation: scale 3s infinite;
 }
 .block{
    display: flex;
@@ -21,7 +22,7 @@ body{
    justify-content: center;
    align-items: center;
    width: 2000px;
-}
+ }
 
 .block a {
     text-decoration: none;
@@ -41,4 +42,10 @@ p{
     background: url(snowyBG.jpg);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+ 
+}
+
+@keyframes scale {
+    50%{transform: scale(0.5,0.5);}
+
 }
